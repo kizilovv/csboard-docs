@@ -38,7 +38,7 @@ Send an `Idempotency-Key` header (or `idempotency_key` in the body). A retried
 request replays the original order instead of buying twice.
 
 ```bash
-curl -X POST https://api.csboard.com/v1/orders \
+curl -X POST https://csboard.com/v1/orders \
   -H "Authorization: Bearer csb_pub_..." \
   -H "Content-Type: application/json" \
   -H "Idempotency-Key: 6f9c2b10-1a2b-4c3d-8e4f-5a6b7c8d9e0f" \

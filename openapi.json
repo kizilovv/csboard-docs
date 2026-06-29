@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "https://api.csboard.com/v1",
+      "url": "https://csboard.com/v1",
       "description": "Production"
     }
   ],
