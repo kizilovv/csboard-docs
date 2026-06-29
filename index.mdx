@@ -1,0 +1,38 @@
+---
+title: "CSBoard API"
+description: "Market data over the CSBoard marketplace — plus opt-in buying from your balance."
+---
+
+For developers & AI agents.
+
+Live listings, floats, stickers, minAsk prices and FX rates over the CSBoard
+marketplace — plus opt-in buying straight from your balance. Free to read,
+key-gated, built for automation.
+
+<CardGroup cols={2}>
+  <Card title="Get your API key" icon="key" href="https://csboard.com/profile?tab=api">
+    Generate a `csb_pub_…` key in your CSBoard profile.
+  </Card>
+  <Card title="Point your AI agent here" icon="robot" href="/llms.txt">
+    The entire API in one file — auth, every endpoint, JSON samples, MCP config.
+  </Card>
+</CardGroup>
+
+## Base URL
+
+```
+https://api.csboard.com/v1
+```
+
+Every price in this API is **USD**. Use [`GET /v1/currency`](/api-reference/get-currency)
+to convert to a local currency.
+
+## Quick start
+
+```bash
+curl https://api.csboard.com/v1/listings \
+  -H "Authorization: Bearer csb_pub_..."
+```
+
+Only [`GET /v1/health`](/api-reference/get-health) works without a key; every
+other endpoint requires one. See [Authentication](/authentication).

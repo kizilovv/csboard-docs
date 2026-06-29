@@ -1,0 +1,43 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "CSBoard API",
+  "colors": {
+    "primary": "#22c55e",
+    "light": "#4ade80",
+    "dark": "#16a34a"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Get started",
+            "pages": ["index", "authentication", "rate-limits", "buying"]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "openapi": "openapi.json"
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      { "label": "Get a key", "href": "https://csboard.com/profile?tab=api" }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "csboard.com",
+      "href": "https://csboard.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "website": "https://csboard.com"
+    }
+  }
+}
