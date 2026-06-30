@@ -7,8 +7,8 @@ Limits are **per key**.
 
 | Limit | Scope |
 | --- | --- |
-| **30 / min** | Pointed reads — listings, prices, currency, balance, order status |
-| **30 / min** | Buying — `POST /v1/orders` (spends money) |
+| **100 / min** | Pointed reads — listings, prices, currency, balance, order status |
+| **250 / min** | Buying — `POST /v1/orders` (spends money) |
 | **1 / min** | Bulk snapshot — `GET /v1/prices/snapshot.ndjson.gz` |
 
 Exceeding a limit returns `429` with `{ "code": "rate_limit_exceeded" }` and a
